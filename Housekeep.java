@@ -1,4 +1,4 @@
-public class Housekeep extends Karyawan {
+public class Housekeep extends Karyawan { //ini adalah kelas yang mewarisi kelas Karyawan
     public String nama, alamat;
     public int no_hp;
 
