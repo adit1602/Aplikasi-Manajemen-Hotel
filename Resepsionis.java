@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Resepsionis extends Karyawan{ //ini adalah class resepsionis yang mewarisi class karyawan
-    Scanner in = new Scanner(System.in); 
+public class Resepsionis extends Karyawan{
+    Scanner in = new Scanner(System.in);
     public int id, no_hp, bayar;
     public String nama, alamat;
     public String kamar, bookKamar;
@@ -132,10 +132,7 @@ public class Resepsionis extends Karyawan{ //ini adalah class resepsionis yang m
     }
 
     @Override
-    public String namak() {
-        return null;
-    }
-    public String namak(String namak){
-        return namak;
+    public void tugas(){
+        System.out.println("Melayani tamu yang check in");
     }
 }

@@ -1,4 +1,4 @@
-public class Housekeep extends Karyawan { //ini adalah kelas yang mewarisi kelas Karyawan
+public class Housekeep extends Karyawan {
     public String nama, alamat;
     public int no_hp;
 
@@ -40,8 +40,7 @@ public class Housekeep extends Karyawan { //ini adalah kelas yang mewarisi kelas
         System.out.println("No Hp      : 0938398773302");
     }
 
-    @Override
-    public String namak() {
-        return null;
-    }
+//    public void tugas(){
+//        System.out.println("Melayani tamu yang check in");
+//    }
 }

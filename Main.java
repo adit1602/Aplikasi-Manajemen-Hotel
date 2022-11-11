@@ -11,6 +11,7 @@ public class Main {
         Housekeep housekeep = new Housekeep();
         Bayar bayar = new Bayar();
         Kamar hotel = new Kamar();
+        Karyawan krw = new Karyawan();
         Scanner input = new Scanner(System.in);
 
 
@@ -24,7 +25,8 @@ public class Main {
          int pil2 = input.nextInt();
         if (pil2 == 1) {
             System.out.println("FITUR RESEPSIONIS");
-            System.out.println("Lihat data 1.HouseKeeping/2.Chef/3.Data Makanan/4.Data Kamar");
+            resepsionis.tugas();
+            System.out.println("Lihat data 1.HouseKeeping/2.Chef/3.Data Makanan/4.Data Kamar/5. Cek Gaji");
             int pil3 = input.nextInt();
             if (pil3 == 1) {
                 housekeep.dataHousekeep();
@@ -34,8 +36,10 @@ public class Main {
                 makanan.DataMakanan();
             }else if (pil3 == 4){
                 hotel.DataKamar();
-            }else{
-                System.out.println("Data tidak ditemukan");
+            }else if (pil3 == 5){
+                System.out.println("Menu cek gaji ");
+                krw.gaji(resepsionis);
+                krw.gaji(housekeep);
             }
 
         }
